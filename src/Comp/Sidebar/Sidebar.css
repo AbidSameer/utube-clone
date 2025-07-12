@@ -1,0 +1,102 @@
+/* Sidebar.css */
+
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background-color:white;
+  padding: 16px 12px;
+  overflow-y: auto;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  padding-top: 80px;
+  padding-left: 0%;
+}
+
+/* Shortcut and Subscribed Sections */
+.shortcut-links,
+.subcribed-list {
+  margin-bottom: 16px;
+}
+
+/* Common Styles for Sidebar Links */
+.side-link {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+
+.side-link:hover {
+  background-color: #e6e6e6;
+}
+
+/* Images inside Links */
+
+.side-link img {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Text inside Links */
+
+.side-link p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  }
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+/* Optional Scrollbar Styling */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+/* Small Sidebar Styles */
+.small-sidebar {
+  width: 3%;
+}
+
+
+
+
+.small-sidebar hr{
+  width: 30%;
+  margin-bottom:16px auto 25px auto;
+}
+.small-sidebar p{
+  display: none;
+}
+.small-sidebar h3{
+  display: none;
+}
+.side-link.active img{
+  padding-bottom: 2px;
+  border-bottom: 3px solid red;
+}
+@media (max-width:900px) {
+  .sidebar{
+    display: none;
+  }
+  
+}

@@ -1,0 +1,42 @@
+.recommended {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.side-vedio-list {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.side-vedio-list img {
+  width: 160px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.vedio-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vedio-info h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+.vedio-info p {
+  font-size: 12px;
+  color: #555;
+  margin: 2px 0;
+}
+@media (max-width:900px) {
+  .recommended{
+    flex-basis:100%;
+  }
+  }

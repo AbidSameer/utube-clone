@@ -1,0 +1,88 @@
+/* General Flex Utility */
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Styles */
+nav {
+  padding: 10px 2%;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Left Section */
+.nav-left .menu-icon {
+  width: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-left .logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Middle Section */
+.nav-middle {
+  flex: 1;
+  justify-content: center;
+}
+
+.search-box {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.search-icon {
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Right Section */
+.nav-right img {
+  width: 24px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width:900px) {
+  .menu-icon:none;
+  
+.nav-right img{
+  display: none;
+
+}
+.nav-right .user-icon{
+  display: block
+  width:30px;
+}
+.logo{
+  width: 90px;
+}
+.nav-middle .search-box input{
+  width: 100px;
+}
+}
