@@ -9,7 +9,7 @@ import {BrowserRouter} from "react-router-dom"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/youtube-clone"}>
+    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/utube-clone"}>
     <App />
     </BrowserRouter>
     
