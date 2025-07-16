@@ -10,6 +10,12 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
+.recommended {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
 
 .side-vedio-list img {
   width: 160px;

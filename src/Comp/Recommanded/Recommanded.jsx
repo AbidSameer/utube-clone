@@ -21,12 +21,12 @@ const Recommanded = ({categoryId}) => {
 
     useEffect(()=>{
         fetchData();
-    },[])
+    },[categoryId])
   return (
     <div className='recommended'>
         {apiData.map((item,index)=>{
             return(
-            <Link  to={`/vedio/${item.snippet.categoryId}/${item.id}`}  key={index} className='side-vedio-list'>
+            <Link to={`/video/${item.id}`} key={index} className="side-vedio-list">
             <img src={item.snippet.thumbnails.medium.url} alt="" />
             <div className='vedio-info'>
                 <h4>{item.snippet.title}</h4>
